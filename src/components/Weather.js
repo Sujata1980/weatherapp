@@ -21,7 +21,7 @@ const Weather = () => {
         
 
         try{
-            const res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${'76758c2e86c42a6afccf552ad6e330aa'}`)
+            const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${'76758c2e86c42a6afccf552ad6e330aa'}`)
 
             console.log(res);
             setWeather(res);
